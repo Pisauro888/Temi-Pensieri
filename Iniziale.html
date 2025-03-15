@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuto - TemaHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 400px;
+            margin: 10% auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="TemaHub Logo" class="logo">
+        <h2>Inserisci il tuo nome per iniziare</h2>
+        <input type="text" id="username" placeholder="Nome">
+        <button class="btn" onclick="startSite()">Entra</button>
+    </div>
+    
+    <script>
+        function startSite() {
+            var username = document.getElementById('username').value;
+            if (username) {
+                window.location.href = 'index.html';
+            } else {
+                alert('Inserisci un nome!');
+            }
+        }
+    </script>
+</body>
+</html>

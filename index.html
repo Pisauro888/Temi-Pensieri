@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemaHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 600px;
+            margin: 10% auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background: #6a11cb;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            border-radius: 25px;
+            font-size: 20px;
+            transition: 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .buttons a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temix</h1>
+        <p>Un luogo dove puoi creare e leggere temi altrui in modo anonimo.</p>
+        <p>Puoi inserire le tue tracce personalizzate o navigare tra quelle già disponibili.</p>
+        <div class="buttons">
+            <a href="autonomia.html">Autonomia</a>
+            <a href="ispirazione.html">Ispirazione</a>
+            <a href="Narrazione.html">Narrazione</a>
+        </div>
+    </div>
+</body>
+</html>
